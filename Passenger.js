@@ -25,6 +25,8 @@ class Passenger {
 }
 
 module.exports=Passenger;
+
+
 // Declare a new passenger
 const akua = new Passenger('Akua', "P12345", "1A" );
 
