@@ -8,3 +8,4 @@ class Airport{
         this.name=name;
     }
 }
+module.exports=Airport;

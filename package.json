@@ -4,7 +4,7 @@
   "description": "",
   "main": "Bag.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "test:report": "jest --coverage=true"
   },
   "author": "",

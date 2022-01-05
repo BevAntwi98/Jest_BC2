@@ -17,8 +17,7 @@ class Plane {
     board(Passenger) {
         Passenger;
         this.passenger.push(Passenger);
-        let text = `${Passenger} has boarded the plane!`;
-        console.log(text);
+       return Passenger;
 
         // changing output text if more than one person has boarded
         // if (Passenger.length > 2) {
@@ -32,18 +31,17 @@ class Plane {
     missedFlight(Passenger) {
         Passenger;
         this.passenger.pop(Passenger);
-        let text = `${Passenger} has not boarded and missed the flight`;
-        console.log(text);
+        return Passenger;
     }
     // display all passengers currently on plane
     displayPassengers() {
-        console.log(this.passenger);
+        return this.passenger;
     }
 
     // remove all
     removePassengers() {
         this.passenger = [];
-        console.log("all passengers have been removed");
+        return this.passenger;
     }
 }
 
@@ -51,9 +49,8 @@ module.exports=Plane;
 
 const plane = new Plane("BA001");
 plane.board("Tony");
-plane.board("Emilia");
-plane.displayPassengers();
-plane.board("Akua");
-plane.displayPassengers();
-plane.missedFlight("Akua");
-plane.displayPassengers();
+
+// plane.board("Akua");
+// plane.displayPassengers();
+// plane.missedFlight("Akua");
+// plane.displayPassengers();
